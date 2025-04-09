@@ -4,12 +4,14 @@
         "altText": "Logo dark",
         "styles": {
             "self": {
-                "margin": ["mr-3"]
+                "margin": [
+                    "mr-3"
+                ]
             }
         },
         "type": "ImageBlock"
     },
-    "title": "Finca",
+    "title": "Finca Amistad",
     "primaryLinks": [
         {
             "label": "THE FARM",
@@ -56,8 +58,7 @@
             "type": "Link"
         }
     ],
-    "secondaryLinks": [
-    ],
+    "secondaryLinks": [],
     "variant": "logo-left-primary-nav-right",
     "colors": "bg-emerald-fg-light",
     "type": "Header"
