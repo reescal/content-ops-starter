@@ -12,17 +12,24 @@ import MenuIcon from '../../svgs/menu';
 
 export default function Header(props) {
     const { colors = 'bg-light-fg-dark', styles = {}, enableAnnotations } = props;
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 0);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <header
             className={classNames(
                 'sb-component',
                 'sb-component-header',
-                colors,
-                'relative',
-                'shadow-header',
+                isScrolled ? colors : 'bg-transparent',
                 styles?.self?.margin ? mapStyles({ padding: styles?.self?.margin }) : undefined,
-                styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : 'p-4',
-                'z-50'
+                styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : 'p-4'
             )}
             {...(enableAnnotations && { 'data-sb-object-id': props?.__metadata?.id })}
         >

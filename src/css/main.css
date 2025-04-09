@@ -123,6 +123,10 @@
         }
     }
 
+    .sb-component-header {
+        @apply fixed top-0 left-0 z-50 w-full transition-colors duration-300;
+    }
+
     /* Buttons */
     .sb-component-button {
         @apply inline-flex justify-center items-center text-center border transition duration-200 ease-in hover:-translate-y-1;
@@ -244,6 +248,9 @@
         .sb-carousel-dot-active {
             @apply bg-dark;
         }
+    }
+    .bg-emerald-fg-light{
+        @apply text-light bg-emerald-700;
     }
     .bg-dark-fg-light,
     .sb-card.bg-dark-fg-light {

@@ -6,30 +6,37 @@
     },
     "text": "A description of your brand",
     "primaryLinks": {
-        "title": "Product",
+        "title": "Menu",
         "links": [
             {
-                "label": "Features",
-                "altText": "Features page",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
+                "label": "The Farm",
+                "altText": "Phone number",
+                "url": "tel:50712345678",
                 "style": "secondary",
                 "type": "Link"
             },
             {
-                "label": "Pricing",
-                "url": "/pricing",
-                "icon": "arrowRight",
-                "iconPosition": "right",
+                "label": "Stay",
+                "altText": "Contact email",
+                "url": "mailto:reservations@finca.com",
                 "style": "secondary",
                 "type": "Link"
             },
             {
-                "label": "Documentation",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
+                "label": "Dine",
+                "url": "https://maps.app.goo.gl/Muz5pNFhUCRdEXZT7",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "Experience",
+                "url": "https://maps.app.goo.gl/Muz5pNFhUCRdEXZT7",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "Blog",
+                "url": "https://maps.app.goo.gl/Muz5pNFhUCRdEXZT7",
                 "style": "secondary",
                 "type": "Link"
             }
@@ -37,22 +44,37 @@
         "type": "FooterLinksGroup"
     },
     "secondaryLinks": {
-        "title": "Company",
+        "title": "Contact Us",
         "links": [
             {
-                "label": "Careers",
-                "altText": "careers page",
-                "url": "/careers",
-                "icon": "arrowRight",
-                "iconPosition": "right",
+                "label": "+507 1234 5678",
+                "altText": "Phone number",
+                "url": "tel:50712345678",
                 "style": "secondary",
                 "type": "Link"
             },
             {
-                "label": "Blog",
-                "url": "/blog",
-                "icon": "arrowRight",
-                "iconPosition": "right",
+                "label": "reservations@finca.com",
+                "altText": "Contact email",
+                "url": "mailto:reservations@finca.com",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "Finca",
+                "url": "https://maps.app.goo.gl/Muz5pNFhUCRdEXZT7",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "Horqueta, Boquete, Chiriqui",
+                "url": "https://maps.app.goo.gl/Muz5pNFhUCRdEXZT7",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "Panama",
+                "url": "https://maps.app.goo.gl/Muz5pNFhUCRdEXZT7",
                 "style": "secondary",
                 "type": "Link"
             }
@@ -85,25 +107,7 @@
             "type": "Social"
         }
     ],
-    "legalLinks": [
-        {
-            "label": "Terms",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        },
-        {
-            "label": "Privacy",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        }
-    ],
-    "copyrightText": "Powered by [Netlify](https://www.netlify.com/)\n",
-    "colors": "bg-dark-fg-light",
+    "copyrightText": "©2025 THE RANCH",
+    "colors": "bg-emerald-fg-light",
     "type": "Footer"
 }

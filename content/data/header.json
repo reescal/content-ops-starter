@@ -9,9 +9,10 @@
         },
         "type": "ImageBlock"
     },
+    "title": "Finca",
     "primaryLinks": [
         {
-            "label": "Pricing",
+            "label": "THE FARM",
             "url": "/pricing",
             "icon": "arrowRight",
             "iconPosition": "right",
@@ -19,7 +20,7 @@
             "type": "Link"
         },
         {
-            "label": "Blog",
+            "label": "STAY",
             "altText": "Blog",
             "url": "/blog",
             "icon": "arrowRight",
@@ -28,7 +29,7 @@
             "type": "Link"
         },
         {
-            "label": "Careers",
+            "label": "DINE",
             "altText": "Careers page",
             "url": "/careers",
             "icon": "arrowRight",
@@ -37,58 +38,27 @@
             "type": "Link"
         },
         {
-            "label": "Dropdown",
-            "altText": "Dropdown",
-            "links": [
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                },
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                },
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                }
-            ],
-            "labelStyle": "secondary",
-            "type": "SubNav"
-        }
-    ],
-    "secondaryLinks": [
-        {
-            "label": "Sign up",
-            "altText": "Sign up",
-            "url": "https://app.netlify.com/signup",
+            "label": "EXPERIENCE",
+            "altText": "Careers page",
+            "url": "/careers",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
-            "type": "Button"
+            "type": "Link"
         },
         {
-            "label": "Log in",
-            "url": "/",
+            "label": "BLOG",
+            "altText": "Blog",
+            "url": "/blog",
             "icon": "arrowRight",
             "iconPosition": "right",
-            "style": "primary",
-            "type": "Button"
+            "style": "secondary",
+            "type": "Link"
         }
     ],
-    "variant": "logo-left-primary-nav-centered",
-    "colors": "bg-light-fg-dark",
+    "secondaryLinks": [
+    ],
+    "variant": "logo-left-primary-nav-right",
+    "colors": "bg-emerald-fg-light",
     "type": "Header"
 }
