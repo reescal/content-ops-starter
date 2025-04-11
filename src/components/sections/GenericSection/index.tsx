@@ -15,6 +15,7 @@ export default function GenericSection(props) {
     const alignItems = styles?.self?.alignItems ?? 'flex-start';
     const hasTextContent = !!(badge?.url || title?.text || subtitle || text || actions.length > 0);
     const hasMedia = !!(media && (media?.url || (media?.fields ?? []).length > 0));
+    const mediaLast = !!(media && media?.goesLast === true);
     const hasXDirection = flexDirection === 'row' || flexDirection === 'row-reverse';
 
     return (
@@ -39,7 +40,7 @@ export default function GenericSection(props) {
                     'gap-y-16'
                 )}
             >
-                {hasMedia && (
+                {hasMedia && mediaLast === false && (
                     <div
                         className={classNames('w-full', 'flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }), {
                             'max-w-sectionBody': media.__metadata.modelName === 'FormBlock',
@@ -109,6 +110,17 @@ export default function GenericSection(props) {
                                 ))}
                             </div>
                         )}
+                    </div>
+                )}
+                {hasMedia && mediaLast === true && (
+                    <div
+                        className={classNames('w-full', 'flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }), {
+                            'max-w-sectionBody': media.__metadata.modelName === 'FormBlock',
+                            'lg:w-[57.5%] lg:shrink-0': hasTextContent && hasXDirection,
+                            'lg:mt-10': badge?.label && media.__metadata.modelName === 'FormBlock' && hasXDirection
+                        })}
+                    >
+                        <Media media={media} hasAnnotations={enableAnnotations} />
                     </div>
                 )}
             </div>

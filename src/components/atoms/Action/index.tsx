@@ -31,7 +31,7 @@ export default function Action(props) {
             )}
             {...annotations}
         >
-            {label && <span {...(fieldPath && { 'data-sb-field-path': '.label' })}>{label}</span>}
+            {label && <span  {...(fieldPath && { 'data-sb-field-path': '.label' })} className='whitespace-pre-line text-left'>{label}</span>}
             {showIcon && IconComponent && (
                 <IconComponent
                     className={classNames('shrink-0', 'fill-current', 'w-[1.25em]', 'h-[1.25em]', {

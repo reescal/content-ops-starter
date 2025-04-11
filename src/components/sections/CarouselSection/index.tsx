@@ -10,13 +10,13 @@ import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to
 import { getDataAttrs } from '../../../utils/get-data-attrs';
 import { getComponent } from '../../components-registry';
 import Section from '../Section';
-import Badge from '../../atoms/Badge';
+import { Action, Badge } from '../../atoms';
 import TitleBlock from '../../blocks/TitleBlock';
 import ChevronBigLeftIcon from '../../svgs/chevron-big-left';
 import ChevronBigRightIcon from '../../svgs/chevron-big-right';
 
 export default function CarouselSection(props) {
-    const { elementId, colors, backgroundImage, badge, title, subtitle, items = [], variant, styles = {}, enableAnnotations } = props;
+    const { elementId, colors, backgroundImage, badge, title, subtitle, items = [], actions = [], variant, styles = {}, enableAnnotations } = props;
 
     return (
         <Section
@@ -29,13 +29,36 @@ export default function CarouselSection(props) {
         >
             <div className={classNames('w-full', 'flex', 'flex-col', mapStyles({ alignItems: styles?.self?.justifyContent ?? 'flex-start' }))}>
                 {badge && <Badge {...badge} className="w-full max-w-sectionBody" {...(enableAnnotations && { 'data-sb-field-path': '.badge' })} />}
-                {title && (
-                    <TitleBlock
-                        {...title}
-                        className={classNames('w-full', 'max-w-sectionBody', { 'mt-4': badge?.label })}
-                        {...(enableAnnotations && { 'data-sb-field-path': '.title' })}
-                    />
-                )}
+                <div className={classNames('w-full', 'flex', 'flex-row', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}>
+                    {title && (
+                        <TitleBlock
+                            {...title}
+                            className={classNames('w-full', 'max-w-sectionBody', { 'mt-4': badge?.label })}
+                            {...(enableAnnotations && { 'data-sb-field-path': '.title' })}
+                        />
+                    )}
+                    {actions.length > 0 && (
+                        <div
+                            className={classNames(
+                                'flex',
+                                'flex-wrap',
+                                mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }),
+                                'items-center',
+                                'gap-4'
+                            )}
+                            {...(enableAnnotations && { 'data-sb-field-path': '.actions' })}
+                        >
+                            {actions.map((action, index) => (
+                                <Action
+                                    key={index}
+                                    {...action}
+                                    className="lg:whitespace-nowrap"
+                                    {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })}
+                                />
+                            ))}
+                        </div>
+                    )}
+                </div>
                 {subtitle && (
                     <p
                         className={classNames(
@@ -147,7 +170,7 @@ function CarouselMultipleWithNavigation({ items = [], hasTopMargin, hasSectionTi
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <div className={classNames('sb-carousel-nav', itemsTotal > 1 ? 'flex justify-center gap-4 mt-8' : 'hidden')}>
+            <div className={classNames('sb-carousel-nav', itemsTotal > 1 ? 'flex justify-between mt-4 pl-8 pr-8' : 'hidden')}>
                 <button
                     className="inline-flex items-center justify-center w-10 h-10 rounded-full cursor-pointer sb-carousel-prev"
                     aria-label="Previous"

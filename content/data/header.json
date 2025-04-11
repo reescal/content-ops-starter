@@ -15,36 +15,29 @@
     "primaryLinks": [
         {
             "label": "THE FARM",
-            "url": "/pricing",
-            "icon": "arrowRight",
-            "iconPosition": "right",
+            "altText": "About us",
+            "url": "/aboutus",
             "style": "secondary",
             "type": "Link"
         },
         {
             "label": "STAY",
-            "altText": "Blog",
-            "url": "/blog",
-            "icon": "arrowRight",
-            "iconPosition": "right",
+            "altText": "Stay",
+            "url": "/stay",
             "style": "secondary",
             "type": "Link"
         },
         {
             "label": "DINE",
-            "altText": "Careers page",
-            "url": "/careers",
-            "icon": "arrowRight",
-            "iconPosition": "right",
+            "altText": "Dine page",
+            "url": "/dine",
             "style": "secondary",
             "type": "Link"
         },
         {
             "label": "EXPERIENCE",
-            "altText": "Careers page",
-            "url": "/careers",
-            "icon": "arrowRight",
-            "iconPosition": "right",
+            "altText": "Experience page",
+            "url": "/experience",
             "style": "secondary",
             "type": "Link"
         },
@@ -52,8 +45,6 @@
             "label": "BLOG",
             "altText": "Blog",
             "url": "/blog",
-            "icon": "arrowRight",
-            "iconPosition": "right",
             "style": "secondary",
             "type": "Link"
         }

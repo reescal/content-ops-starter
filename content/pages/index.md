@@ -26,7 +26,7 @@ sections:
         textAlign: center
   - type: GenericSection
     media:
-      url: /images/hero2.svg
+      url: /images/logo-dark.svg
       altText: Fun feature preview
       type: ImageBlock
     subtitle: High atop the cliffs of Big Sur, the striking views and otherworldly serenity can’t help but stir your soul. Find your calm, and so much more.
@@ -57,9 +57,9 @@ sections:
         showIcon: true
         icon: arrowRight
         iconPosition: right
-        style: primary
+        style: secondary
         elementId: ''
-        type: Link
+        type: Button
     items:
       - title: Coast House
         text: >-
@@ -72,7 +72,7 @@ sections:
               borderRadius: full
           type: ImageBlock
         actions:
-          - label: View All
+          - label: View Cabin
             altText: ''
             url: /
             showIcon: true
@@ -105,7 +105,7 @@ sections:
               borderRadius: full
           type: ImageBlock
         actions:
-          - label: View All
+          - label: View Cabin
             altText: ''
             url: /
             showIcon: true
@@ -137,6 +137,16 @@ sections:
             self:
               borderRadius: full
           type: ImageBlock
+        actions:
+          - label: View Cabin
+            altText: ''
+            url: /
+            showIcon: true
+            icon: arrowRight
+            iconPosition: right
+            style: primary
+            elementId: ''
+            type: Link
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
@@ -161,7 +171,7 @@ sections:
               borderRadius: full
           type: ImageBlock
         actions:
-          - label: View All
+          - label: View Cabin
             altText: ''
             url: /
             showIcon: true
@@ -207,9 +217,9 @@ sections:
         iconPosition: right
         style: primary
         elementId: ''
-        type: Button
+        type: Link
     media:
-      url: /images/main-hero.svg
+      url: /images/dine.jpg
       altText: Unblock your team boost your time to production preview
       elementId: ''
       type: ImageBlock
@@ -218,15 +228,12 @@ sections:
       color: text-primary
       type: Badge
     elementId: ''
-    colors: bg-emerald-fg-light
+    colors: bg-orange-fg-dark
     styles:
       self:
         alignItems: center
         flexDirection: row
         padding:
-          - pt-16
-          - pl-16
-          - pb-16
           - pr-16
   - type: CarouselSection
     title:
@@ -243,9 +250,9 @@ sections:
         showIcon: true
         icon: arrowRight
         iconPosition: right
-        style: primary
+        style: secondary
         elementId: ''
-        type: Link
+        type: Button
     items:
       - title: Activities
         text: >-
@@ -401,11 +408,11 @@ sections:
         showIcon: true
         icon: arrowRight
         iconPosition: right
-        style: primary
+        style: secondary
         elementId: ''
-        type: Button
+        type: Link
     media:
-      url: /images/main-hero.svg
+      url: /images/finca.jpeg
       altText: Unblock your team boost your time to production preview
       elementId: ''
       type: ImageBlock
@@ -414,15 +421,12 @@ sections:
       color: text-primary
       type: Badge
     elementId: ''
-    colors: bg-emerald-fg-light
+    colors: bg-orange-fg-dark
     styles:
       self:
         alignItems: center
         flexDirection: row
         padding:
-          - pt-16
-          - pl-16
-          - pb-16
           - pr-16
   - type: CarouselSection
     subtitle: Featured Reviews
@@ -498,7 +502,7 @@ sections:
             justifyContent: center
         type: FeaturedItem
     elementId: null
-    variant: next-prev-nav
+    variant: dots-nav
     colors: bg-light-fg-dark
     styles:
       self:

@@ -252,6 +252,9 @@
     .bg-emerald-fg-light{
         @apply text-light bg-emerald-700;
     }
+    .bg-orange-fg-dark{
+        @apply text-dark bg-orange-200;
+    }
     .bg-dark-fg-light,
     .sb-card.bg-dark-fg-light {
         @apply text-light bg-dark;

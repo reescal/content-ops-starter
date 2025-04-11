@@ -61,19 +61,7 @@
                 "type": "Link"
             },
             {
-                "label": "Finca",
-                "url": "https://maps.app.goo.gl/Muz5pNFhUCRdEXZT7",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Horqueta, Boquete, Chiriqui",
-                "url": "https://maps.app.goo.gl/Muz5pNFhUCRdEXZT7",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Panama",
+                "label": "Finca Amistad\nHorqueta, Boquete, Chiriqui\nPanama",
                 "url": "https://maps.app.goo.gl/Muz5pNFhUCRdEXZT7",
                 "style": "secondary",
                 "type": "Link"
@@ -109,5 +97,14 @@
     ],
     "copyrightText": "©2025 THE RANCH",
     "colors": "bg-emerald-fg-light",
-    "type": "Footer"
+    "type": "Footer",
+    "styles":{
+        "self": {
+            "padding": [
+                "px-4",
+                "pt-28",
+                "pb-4"
+            ]
+        }
+    }
 }
